@@ -53,6 +53,7 @@ export default defineConfig({
     },
     jsPlugins: [{ name: "vite-plus", specifier: "vite-plus/oxlint-plugin" }],
   },
+  base: process.env.BASE_PATH ?? "/",
   resolve: {
     alias: {
       "@components": fileURLToPath(new URL("./src/components", import.meta.url)),

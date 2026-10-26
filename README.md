@@ -49,3 +49,13 @@ src/
 ```
 
 The 3D scene follows the pointer, and motion is reduced automatically for visitors with `prefers-reduced-motion`.
+
+## Deploy to GitHub Pages
+
+The workflow in `.github/workflows/deploy.yml` builds the site and publishes it to GitHub Pages on every push to `main`.
+
+1. On GitHub, open the repository's **Settings → Pages** and set **Source** to **GitHub Actions** (one time only).
+2. Push to `main`. The **Actions** tab shows the deploy, and the site goes live at `https://<user>.github.io/<repo>/`.
+
+The workflow sets the right base path automatically, so the site also works if the repository is renamed, is a `<user>.github.io` repository, or uses a custom domain.
+
