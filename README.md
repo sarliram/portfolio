@@ -27,7 +27,7 @@ All content lives in JSON files in **`src/data/`**:
 | `avatar.json`     | hero avatar colours (skin, hair, eyes, lips, hoodie, laptop, desk, chair, accents) |
 | `projects/projects.json` | project cards (`hue` 0–360 is the fallback colour when a project has no image) |
 | `projects/1.jpg`, `2.jpg`, … | cover image for the 1st, 2nd, … project in `projects.json` (jpg, png, webp, avif, gif or svg) |
-| `links.json` | side-rail and footer links: `socials` (label, href, icon) and `resume` (label, href). Icons: github, linkedin, x, instagram, dribbble, youtube, email, link |
+| `links.json` | side-rail and footer links: `socials` (label, href, icon) and `resume` (label, href; paste a Google Drive share link and it becomes a direct PDF download, so share the file as "Anyone with the link"). Icons: github, linkedin, x, instagram, dribbble, youtube, email, link |
 | `experience.json` | work history                                                                        |
 | `skills.json`     | skill groups (each skill also becomes a ball in the Tech stack section)             |
 

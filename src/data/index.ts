@@ -151,11 +151,23 @@ export const projects: Project[] = (projectsData satisfies Project[]).map((proje
   image: projectImageByNumber.get(String(index + 1)),
 }));
 export const experience: Experience[] = experienceData satisfies Experience[];
+const googleDriveFileId = (href: string) =>
+  href.match(/drive\.google\.com\/file\/d\/([\w-]+)/)?.[1] ??
+  href.match(/drive\.google\.com\/(?:open|uc)\?(?:.*&)?id=([\w-]+)/)?.[1];
+
+export const toDownloadHref = (href: string) => {
+  const fileId = googleDriveFileId(href);
+  return fileId ? `https://drive.google.com/uc?export=download&id=${fileId}` : href;
+};
+
 export const links: Links = {
   socials: linksData.socials.map((social) => ({
     ...social,
     icon: isSocialIcon(social.icon) ? social.icon : "link",
   })),
-  resume: linksData.resume,
+  resume: linksData.resume && {
+    ...linksData.resume,
+    href: toDownloadHref(linksData.resume.href),
+  },
 };
 export const skills: SkillGroup[] = skillsData satisfies SkillGroup[];

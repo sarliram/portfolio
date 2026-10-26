@@ -83,6 +83,9 @@ export default function SideRails() {
       {links.resume && (
         <a
           href={links.resume.href}
+          target="_blank"
+          rel="noreferrer"
+          download
           className="fixed right-8 bottom-8 z-40 hidden items-center gap-2 font-mono text-xs tracking-[0.3em] text-mute uppercase transition-colors hover:text-accent xl:flex"
         >
           {links.resume.label}

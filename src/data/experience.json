@@ -1,20 +1,32 @@
 [
   {
-    "period": "2024 — Now",
-    "role": "Senior Frontend Engineer",
-    "company": "Company One",
-    "summary": "Lead the web platform team; rebuilt the app shell and cut load time in half."
+    "period": "2025 — Now",
+    "role": "Frontend Developer",
+    "company": "MagickBox",
+    "summary": "Frontend development with React and modern JavaScript."
   },
   {
-    "period": "2022 — 2024",
-    "role": "Frontend Engineer",
-    "company": "Company Two",
-    "summary": "Built the component library and interactive data visualisations."
+    "period": "2023 — 2024",
+    "role": "API Developer & Server Management",
+    "company": "Retail Wholesale POS · Gem POS",
+    "summary": "Built APIs with Node.js, Prisma, Fastify and Docker, and managed servers on DigitalOcean with Docker and Nginx for POS, real estate and e-commerce products."
   },
   {
-    "period": "2020 — 2022",
-    "role": "Web Developer",
-    "company": "Studio Three",
-    "summary": "Shipped marketing sites and WebGL experiences for brand campaigns."
+    "period": "2021 — 2023",
+    "role": "Full Stack Developer",
+    "company": "Prosent.ai",
+    "summary": "Built with Next.js, Node.js and AWS: frontend deployed on Amplify, backend on Lambda and data on RDS."
+  },
+  {
+    "period": "2022",
+    "role": "iOS Developer (Part-time)",
+    "company": "MyanmarBOC",
+    "summary": "Built an iOS app in React Native, using the WordPress API for content."
+  },
+  {
+    "period": "2019 — 2021",
+    "role": "Backend Developer",
+    "company": "Innovative Idea",
+    "summary": "Built backend services with Node.js, Express and MongoDB, including JWT authentication and file uploads."
   }
 ]

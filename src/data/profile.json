@@ -1,29 +1,29 @@
 {
-  "name": "Your Name",
+  "name": "Sar Li Ram",
   "greeting": "Hello! I'm",
-  "role": "Software Engineer",
-  "intro": "A creative",
-  "roles": ["Developer", "Designer", "Engineer"],
+  "role": "Full Stack Developer",
+  "intro": "A full stack",
+  "roles": ["Developer", "Engineer", "Builder"],
   "location": "Bangkok, Thailand",
-  "tagline": "I build fast, considered interfaces — and the 3D details that make them memorable.",
+  "tagline": "I build scalable web applications with React, Next.js, Node.js and AWS — from the interface to the server.",
   "available": true,
-  "email": "hello@example.com",
+  "email": "sarliram.me@gmail.com",
   "about": [
-    "I'm a developer who cares about the space between design and engineering. I like turning rough ideas into products that feel quick, clear and a little bit delightful.",
-    "Lately I've been working with React, TypeScript and WebGL — building interfaces where motion and depth help explain things rather than decorate them."
+    "I'm a full stack developer who loves working with JavaScript across the whole stack — building interfaces in React and Next.js, APIs in Node.js, and the servers and cloud setups that run them.",
+    "I've built and deployed products on AWS (Amplify, Lambda, RDS) and on DigitalOcean with Docker and Nginx, across point-of-sale, real estate and e-commerce. I care about efficient, robust solutions and enjoy leaning on open-source tools to move fast."
   ],
   "stats": [
     {
-      "value": "5+",
-      "label": "Years building for the web"
+      "value": "7",
+      "label": "Years building software"
     },
     {
-      "value": "30+",
-      "label": "Projects shipped"
+      "value": "6",
+      "label": "Companies and teams"
     },
     {
-      "value": "∞",
-      "label": "Cups of coffee"
+      "value": "4",
+      "label": "Languages spoken"
     }
   ]
 }

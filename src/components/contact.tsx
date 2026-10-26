@@ -43,7 +43,13 @@ export default function Contact() {
             ))}
             {links.resume && (
               <li>
-                <a href={links.resume.href} className="hover:text-paper">
+                <a
+                  href={links.resume.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  download
+                  className="hover:text-paper"
+                >
                   {links.resume.label} ↗
                 </a>
               </li>

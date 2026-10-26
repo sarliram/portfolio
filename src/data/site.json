@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Your Name — Portfolio",
-    "description": "Portfolio — software engineer building thoughtful products for the web.",
+    "title": "Sar Li Ram — Portfolio",
+    "description": "Sar Li Ram — full stack developer building scalable web apps with React, Next.js, Node.js and AWS.",
     "themeColor": "#0a0a0c"
   },
   "logo": {
-    "text": "YN",
+    "text": "SLR",
     "accent": ".",
     "href": "#top",
     "label": "Back to top"
@@ -16,10 +16,22 @@
   },
   "nav": {
     "links": [
-      { "label": "Work", "href": "#work" },
-      { "label": "About", "href": "#about" },
-      { "label": "Experience", "href": "#experience" },
-      { "label": "Contact", "href": "#contact" }
+      {
+        "label": "Work",
+        "href": "#work"
+      },
+      {
+        "label": "About",
+        "href": "#about"
+      },
+      {
+        "label": "Experience",
+        "href": "#experience"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      }
     ],
     "openMenuLabel": "Open menu",
     "closeMenuLabel": "Close menu"

@@ -1,18 +1,18 @@
 [
   {
-    "group": "Languages",
-    "items": ["TypeScript", "JavaScript", "GLSL", "HTML", "CSS"]
+    "group": "Frontend",
+    "items": ["React", "Next.js", "React Native", "JavaScript", "HTML", "CSS", "jQuery"]
   },
   {
-    "group": "Frameworks",
-    "items": ["React", "React Three Fiber", "Node.js", "Tailwind CSS"]
+    "group": "UI libraries",
+    "items": ["Material UI", "Chakra UI", "Bootstrap"]
   },
   {
-    "group": "Tooling",
-    "items": ["Vite+", "Vitest", "Oxlint", "Git", "Figma"]
+    "group": "Backend",
+    "items": ["Node.js", "Express", "Fastify", "Prisma", "MySQL", "MongoDB"]
   },
   {
-    "group": "Craft",
-    "items": ["Design systems", "Animation", "Accessibility", "Performance"]
+    "group": "Cloud & DevOps",
+    "items": ["AWS", "Docker", "Nginx", "DigitalOcean", "Linux", "Git"]
   }
 ]
