@@ -1,0 +1,29 @@
+{
+  "name": "Your Name",
+  "greeting": "Hello! I'm",
+  "role": "Software Engineer",
+  "intro": "A creative",
+  "roles": ["Developer", "Designer", "Engineer"],
+  "location": "Bangkok, Thailand",
+  "tagline": "I build fast, considered interfaces — and the 3D details that make them memorable.",
+  "available": true,
+  "email": "hello@example.com",
+  "about": [
+    "I'm a developer who cares about the space between design and engineering. I like turning rough ideas into products that feel quick, clear and a little bit delightful.",
+    "Lately I've been working with React, TypeScript and WebGL — building interfaces where motion and depth help explain things rather than decorate them."
+  ],
+  "stats": [
+    {
+      "value": "5+",
+      "label": "Years building for the web"
+    },
+    {
+      "value": "30+",
+      "label": "Projects shipped"
+    },
+    {
+      "value": "∞",
+      "label": "Cups of coffee"
+    }
+  ]
+}

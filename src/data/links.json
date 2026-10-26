@@ -1,0 +1,23 @@
+{
+  "socials": [
+    {
+      "label": "GitHub",
+      "href": "https://github.com/your-handle",
+      "icon": "github"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/your-handle",
+      "icon": "linkedin"
+    },
+    {
+      "label": "X",
+      "href": "https://x.com/your-handle",
+      "icon": "x"
+    }
+  ],
+  "resume": {
+    "label": "Resume",
+    "href": "#"
+  }
+}

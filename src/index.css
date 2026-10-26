@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0a0a0c;
+  --color-ink-2: #121217;
+  --color-line: #24242c;
+  --color-mute: #8b8b98;
+  --color-paper: #ecebe6;
+  --color-accent: #d4ff4f;
+  --color-accent-2: #7c6cff;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Instrument Serif", ui-serif, Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    @apply bg-ink text-paper font-sans antialiased;
+  }
+  ::selection {
+    @apply bg-accent text-ink;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+@utility eyebrow {
+  @apply font-mono text-xs tracking-[0.2em] text-mute uppercase;
+}
+
+.grain::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 50;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@theme {
+  --animate-role-roll: role-roll 0.9s cubic-bezier(0.7, 0, 0.2, 1) both;
+  --animate-scroll-hint: scroll-hint 2.2s ease-in-out infinite;
+
+  @keyframes role-roll {
+    from {
+      transform: translateY(1em);
+    }
+    to {
+      transform: none;
+    }
+  }
+
+  @keyframes scroll-hint {
+    0% {
+      transform: scaleY(0);
+      transform-origin: top;
+    }
+    45% {
+      transform: scaleY(1);
+      transform-origin: top;
+    }
+    55% {
+      transform: scaleY(1);
+      transform-origin: bottom;
+    }
+    100% {
+      transform: scaleY(0);
+      transform-origin: bottom;
+    }
+  }
+}
+
+@utility text-role-faded {
+  color: transparent;
+  background-image: linear-gradient(180deg, rgba(124, 108, 255, 0.15), rgba(124, 108, 255, 0.85));
+  -webkit-background-clip: text;
+  background-clip: text;
+}

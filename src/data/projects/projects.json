@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Orbit Dashboard",
+    "year": "2026",
+    "description": "Real-time analytics dashboard with streaming charts and a 3D globe of live traffic, rendered with Three.js.",
+    "tags": ["React", "TypeScript", "Three.js", "WebSockets"],
+    "href": "#",
+    "repo": "#",
+    "hue": 75
+  },
+  {
+    "title": "Fieldnotes",
+    "year": "2025",
+    "description": "Offline-first note-taking app with markdown, full-text search and end-to-end encrypted sync.",
+    "tags": ["React", "IndexedDB", "Tailwind"],
+    "href": "#",
+    "repo": "#",
+    "hue": 250
+  },
+  {
+    "title": "Shader Garden",
+    "year": "2025",
+    "description": "A playground of generative GLSL sketches — tweak parameters live and export the result as video.",
+    "tags": ["GLSL", "React Three Fiber", "Vite"],
+    "href": "#",
+    "repo": "#",
+    "hue": 320
+  },
+  {
+    "title": "Checkout Kit",
+    "year": "2024",
+    "description": "Accessible, themeable checkout components used across several storefronts. Cut drop-off by 18%.",
+    "tags": ["TypeScript", "Design System", "a11y"],
+    "href": "#",
+    "hue": 160
+  }
+]

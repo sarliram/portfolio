@@ -1,0 +1,28 @@
+{
+  "order": ["work", "about", "experience", "stack"],
+  "work": {
+    "title": "Selected work",
+    "liveLabel": "Live site",
+    "sourceLabel": "Source",
+    "previousLabel": "Previous project",
+    "nextLabel": "Next project",
+    "goToLabel": "Go to",
+    "slideOfLabel": "of",
+    "previewLabel": "preview"
+  },
+  "about": {
+    "title": "About"
+  },
+  "experience": {
+    "title": "Career & experience"
+  },
+  "stack": {
+    "eyebrow": "Tech stack",
+    "title": "The tools I reach for",
+    "hint": "Push them around, or click to scatter."
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "headline": "Let's build something *good*."
+  }
+}

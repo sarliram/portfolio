@@ -1,0 +1,18 @@
+[
+  {
+    "group": "Languages",
+    "items": ["TypeScript", "JavaScript", "GLSL", "HTML", "CSS"]
+  },
+  {
+    "group": "Frameworks",
+    "items": ["React", "React Three Fiber", "Node.js", "Tailwind CSS"]
+  },
+  {
+    "group": "Tooling",
+    "items": ["Vite+", "Vitest", "Oxlint", "Git", "Figma"]
+  },
+  {
+    "group": "Craft",
+    "items": ["Design systems", "Animation", "Accessibility", "Performance"]
+  }
+]
