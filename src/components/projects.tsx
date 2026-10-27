@@ -100,6 +100,8 @@ function Slide({
             {project.href && (
               <a
                 href={project.href}
+                target="_blank"
+                rel="noreferrer"
                 className="text-accent underline-offset-4 hover:underline"
                 draggable={false}
               >
@@ -109,6 +111,8 @@ function Slide({
             {project.repo && (
               <a
                 href={project.repo}
+                target="_blank"
+                rel="noreferrer"
                 className="text-mute underline-offset-4 hover:text-paper hover:underline"
                 draggable={false}
               >

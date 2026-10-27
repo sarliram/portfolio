@@ -1,37 +1,26 @@
 [
   {
-    "title": "Orbit Dashboard",
+    "title": "TypeFlow",
     "year": "2026",
-    "description": "Real-time analytics dashboard with streaming charts and a 3D globe of live traffic, rendered with Three.js.",
-    "tags": ["React", "TypeScript", "Three.js", "WebSockets"],
-    "href": "#",
-    "repo": "#",
-    "hue": 75
+    "description": "Minimalist, ad-free typing speed test with timed, word and code modes, live WPM and accuracy, switchable themes and synthesized key sounds.",
+    "tags": ["React", "Tailwind", "Web Audio", "Vite"],
+    "href": "https://frontend-eb7677.gitlab.io/",
+    "hue": 28
   },
   {
-    "title": "Fieldnotes",
-    "year": "2025",
-    "description": "Offline-first note-taking app with markdown, full-text search and end-to-end encrypted sync.",
-    "tags": ["React", "IndexedDB", "Tailwind"],
-    "href": "#",
-    "repo": "#",
-    "hue": 250
+    "title": "DevResume.Studio",
+    "year": "2026",
+    "description": "Developer resume builder with a visual form, Markdown and JSON editing, a live A4 or Letter preview, an ATS audit score, presets, autosave and print-to-PDF export.",
+    "tags": ["React", "Tailwind", "Markdown", "Print to PDF"],
+    "href": "https://frontend-764adc.gitlab.io/",
+    "hue": 255
   },
   {
-    "title": "Shader Garden",
-    "year": "2025",
-    "description": "A playground of generative GLSL sketches — tweak parameters live and export the result as video.",
-    "tags": ["GLSL", "React Three Fiber", "Vite"],
-    "href": "#",
-    "repo": "#",
-    "hue": 320
-  },
-  {
-    "title": "Checkout Kit",
-    "year": "2024",
-    "description": "Accessible, themeable checkout components used across several storefronts. Cut drop-off by 18%.",
-    "tags": ["TypeScript", "Design System", "a11y"],
-    "href": "#",
-    "hue": 160
+    "title": "Nightplay Arcade",
+    "year": "2026",
+    "description": "A library of small browser games for short breaks, with no installs and no accounts. Launches with a canvas-rendered Snake, keyboard-first navigation and best-score tracking.",
+    "tags": ["React", "Tailwind", "Canvas", "Vite"],
+    "href": "https://frontend-e0a684.gitlab.io/",
+    "hue": 170
   }
 ]
