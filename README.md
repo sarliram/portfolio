@@ -19,17 +19,18 @@ vp preview      # preview the production build
 
 All content lives in JSON files in **`src/data/`**:
 
-| File              | What it holds                                                                       |
-| ----------------- | ----------------------------------------------------------------------------------- |
-| `profile.json`    | `greeting`, name, role, `intro` + `roles` (rotating hero words), tagline, location, email, about, stats |
-| `site.json`       | page `meta` (browser tab title, description, theme colour), `logo`, `skipLink`, `nav` links and menu labels, `footer` (`copyright` with `{year}` and `{name}`, `credit` label and optional href) |
-| `sections.json`   | `order` of the main sections (remove a key to hide that section; numbers 01, 02 … follow the order), plus every section's titles, labels and hint text. Wrap a word in `*stars*` in the contact `headline` to highlight it |
-| `avatar.json`     | hero avatar colours (skin, hair, eyes, lips, hoodie, laptop, desk, chair, accents) |
-| `projects/projects.json` | project cards (`hue` 0–360 is the fallback colour when a project has no image) |
-| `projects/1.jpg`, `2.jpg`, … | cover image for the 1st, 2nd, … project in `projects.json` (jpg, png, webp, avif, gif or svg) |
-| `links.json` | side-rail and footer links: `socials` (label, href, icon) and `resume` (label, href; paste a Google Drive share link and it becomes a direct PDF download, so share the file as "Anyone with the link"). Icons: github, linkedin, x, instagram, dribbble, youtube, email, link |
-| `experience.json` | work history                                                                        |
-| `skills.json`     | skill groups (each skill also becomes a ball in the Tech stack section)             |
+| File                         | What it holds                                                                                                                                                                                                                                                                  |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `profile.json`               | `greeting`, name, role, `intro` + `roles` (rotating hero words), tagline, location, email, about, stats                                                                                                                                                                        |
+| `site.json`                  | page `meta` (browser tab title, description, theme colour), `logo`, `skipLink`, `nav` links and menu labels, `footer` (`copyright` with `{year}` and `{name}`, `credit` label and optional href)                                                                               |
+| `sections.json`              | `order` of the main sections (remove a key to hide that section; numbers 01, 02 … follow the order), plus every section's titles, labels and hint text. Wrap a word in `*stars*` in the contact `headline` to highlight it                                                     |
+| `avatar.json`                | hero avatar colours (skin, hair, eyes, lips, hoodie, laptop, desk, chair, accents)                                                                                                                                                                                             |
+| `portrait.jpg`               | optional photo for the hero (square, face centred, ideally on a dark backdrop; its edges fade softly into the page background, with no frame). When it exists it replaces the 3D character; delete it to get the character back (jpg, png, webp or avif)                       |
+| `projects/projects.json`     | project cards (`hue` 0–360 is the fallback colour when a project has no image)                                                                                                                                                                                                 |
+| `projects/1.jpg`, `2.jpg`, … | cover image for the 1st, 2nd, … project in `projects.json` (jpg, png, webp, avif, gif or svg)                                                                                                                                                                                  |
+| `links.json`                 | side-rail and footer links: `socials` (label, href, icon) and `resume` (label, href; paste a Google Drive share link and it becomes a direct PDF download, so share the file as "Anyone with the link"). Icons: github, linkedin, x, instagram, dribbble, youtube, email, link |
+| `experience.json`            | work history                                                                                                                                                                                                                                                                   |
+| `skills.json`                | skill groups (each skill also becomes a ball in the Tech stack section)                                                                                                                                                                                                        |
 
 Colours and fonts are Tailwind theme tokens in `src/index.css` (`--color-accent`, `--font-serif`, …).
 
@@ -39,12 +40,12 @@ Colours and fonts are Tailwind theme tokens in `src/index.css` (`--color-accent`
 src/
   data/
     site.json  sections.json  profile.json  links.json       ← your content
-    experience.json  skills.json  avatar.json
+    experience.json  skills.json  avatar.json  portrait.jpg
     projects/projects.json  projects/1.jpg  projects/2.jpg …  ← project cards + cover images
     index.ts                                                ← types + exports
   components/
     hero-scene.tsx          ← Three.js scene (lazy-loaded)
-    hero.tsx  nav.tsx  projects.tsx  about.tsx  experience.tsx  contact.tsx
+    hero.tsx  portrait-hero.tsx  hero-copy.tsx  nav.tsx  projects.tsx  about.tsx  experience.tsx  contact.tsx
     section.tsx  reveal.tsx (scroll-in animation)
 ```
 
@@ -58,4 +59,3 @@ The workflow in `.github/workflows/deploy.yml` builds the site and publishes it 
 2. Push to `main`. The **Actions** tab shows the deploy, and the site goes live at `https://<user>.github.io/<repo>/`.
 
 The workflow sets the right base path automatically, so the site also works if the repository is renamed, is a `<user>.github.io` repository, or uses a custom domain.
-

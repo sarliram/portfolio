@@ -131,6 +131,11 @@ export const fillTemplate = (template: string, values: Record<string, string | n
   );
 
 export const profile: Profile = profileData satisfies Profile;
+const portraits = import.meta.glob<string>("@data/portrait.{jpg,jpeg,png,webp,avif}", {
+  eager: true,
+  import: "default",
+});
+export const portrait: string | undefined = Object.values(portraits)[0];
 const projectImages = import.meta.glob<string>(
   "@data/projects/*.{jpg,jpeg,png,webp,avif,gif,svg}",
   {
