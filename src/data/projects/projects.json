@@ -18,7 +18,7 @@
   {
     "title": "Nightplay Arcade",
     "year": "2026",
-    "description": "A library of small browser games for short breaks, with no installs and no accounts. Launches with a canvas-rendered Snake, keyboard-first navigation and best-score tracking.",
+    "description": "A library of small browser games for short breaks, with no installs and no accounts. Four games so far: a canvas-rendered Snake and three typing games, with keyboard-first navigation and best-score tracking.",
     "tags": ["React", "Tailwind", "Canvas", "Vite"],
     "href": "https://frontend-e0a684.gitlab.io/",
     "hue": 170

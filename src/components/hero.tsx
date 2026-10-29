@@ -1,11 +1,16 @@
 import { lazy, Suspense, useCallback, useEffect, useRef } from "react";
-import { profile } from "@data";
-import RoleSwap from "@components/role-swap";
+import { portrait } from "@data";
+import HeroCopy from "@components/hero-copy";
+import PortraitHero from "@components/portrait-hero";
 import { centeredHeroTextLeft, heroWideBreakpoint } from "@/lib/hero-layout";
 
 const HeroScene = lazy(() => import("@components/hero-scene"));
 
 export default function Hero() {
+  return portrait ? <PortraitHero portrait={portrait} /> : <SceneHero />;
+}
+
+function SceneHero() {
   const sectionRef = useRef<HTMLElement>(null);
   const copyRef = useRef<HTMLDivElement>(null);
   const hintRef = useRef<HTMLDivElement>(null);
@@ -98,23 +103,7 @@ export default function Hero() {
           ref={copyRef}
           className="pointer-events-none relative flex w-full items-center px-5 pt-24 will-change-transform md:px-0 md:pt-0"
         >
-          <div ref={textRef} className="max-w-xl md:shrink-0">
-            <p className="font-sans text-lg font-light tracking-wide text-mute md:text-xl">
-              {profile.greeting}
-            </p>
-            <h1 className="mt-1 font-sans text-4xl font-semibold tracking-tight sm:text-5xl md:text-6xl">
-              {profile.name}
-              <span className="sr-only">, {profile.role}</span>
-            </h1>
-            <div className="mt-10 font-sans uppercase md:mt-14">
-              <p className="text-2xl font-light tracking-tight text-paper/80 normal-case sm:text-3xl md:text-4xl">
-                {profile.intro}
-              </p>
-              <p className="mt-2 text-5xl font-semibold tracking-tight sm:text-6xl md:text-6xl xl:text-8xl">
-                <RoleSwap words={profile.roles} />
-              </p>
-            </div>
-          </div>
+          <HeroCopy ref={textRef} className="max-w-xl md:shrink-0" />
         </div>
 
         <div
