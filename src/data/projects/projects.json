@@ -1,14 +1,14 @@
 [
   {
-    "title": "TypeFlow",
+    "title": "Caretpace",
     "year": "2026",
-    "description": "Minimalist, ad-free typing speed test with timed, word and code modes, live WPM and accuracy, switchable themes and synthesized key sounds.",
-    "tags": ["React", "Tailwind", "Web Audio", "Vite"],
+    "description": "Typing trainer for developers: type real JavaScript, Python, Go, Rust and HTML/CSS snippets with syntax highlighting, or plain prose, with live WPM and accuracy, per-language personal bests, themes and synthesized key sounds. No ads, no accounts.",
+    "tags": ["React", "Tailwind", "Syntax highlighting", "Web Audio"],
     "href": "https://frontend-eb7677.gitlab.io/",
     "hue": 28
   },
   {
-    "title": "DevResume.Studio",
+    "title": "ResumePlate",
     "year": "2026",
     "description": "Developer resume builder with a visual form, Markdown and JSON editing, a live A4 or Letter preview, an ATS audit score, presets, autosave and print-to-PDF export.",
     "tags": ["React", "Tailwind", "Markdown", "Print to PDF"],
