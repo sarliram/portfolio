@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "dev",
-      "runtimeExecutable": "vp",
-      "runtimeArgs": ["dev"],
+      "runtimeExecutable": "zsh",
+      "runtimeArgs": ["-c", "vp dev"],
       "port": 5173
     }
   ]
